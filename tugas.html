@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung jumlah dua bilangan</title>
+</head>
+<body>
+    <div class="container" style="justify-content: center; text-align: center; align-items: center; display: flex;">
+    <table border="1" >
+        <tr>
+            <td>
+                <h1>Menghitung jumlah dua bilangan</h1>
+                
+                <hr>
+                <br>
+        
+            <form>
+                <label for="bilangan1" style="font-weight: bold;">Bilangan 1 :</label>
+                <input type="number" id="bilangan1" name="bilangan1"><br><br>
+        
+                <label for="bilangan2" style="font-weight: bold";>Bilangan 2 :</label>
+                <input type="number" id="bilangan2" name="bilangan2"><br><br>
+        
+                <button type="button" onclick="jumlahkan()">Jumlahkan</button>
+            </form>
+            <p id="hasilPenjumlahan"></p>
+            
+        </tr>
+    </table>
+</div>
+    
+
+
+
+
+
+
+
+
+    
+    <!-- Bikin javascript -->
+    <script>
+        function jumlahkan() {
+            var bilangan1 = parseFloat(document.getElementById('bilangan1').value);
+            var bilangan2 = parseFloat(document.getElementById('bilangan2').value);
+
+            var hasil = bilangan1 + bilangan2;
+
+            document.getElementById('hasilPenjumlahan').innerHTML = 'Hasil penjumlahan: ' + hasil;
+        }
+    </script>
+</body>
+</html>
